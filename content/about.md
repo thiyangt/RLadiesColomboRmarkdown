@@ -5,3 +5,5 @@ title: Hi! Thanks for visiting my talks!
 
 
 ## 2020
+
+1. [R Ladies Colombo - RMarkdown](/rmarkdown_rladies/rmarkdownRladies_tst.html)
