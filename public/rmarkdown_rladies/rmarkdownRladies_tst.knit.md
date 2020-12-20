@@ -84,13 +84,7 @@ background-image:url("turtle14.jpg")
 background-image:url("turtle15.jpg")
 
 ---
-
-
-
 background-image:url("anatomy.jpeg")
-background-size:contain
-
-# R Markdown Anatomy
 
 ---
 
