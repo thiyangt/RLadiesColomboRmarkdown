@@ -7,6 +7,8 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/chocolate-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation-1.0/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome-5.0.13/js/fontawesome-all.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -14,11 +16,25 @@ class: center, middle, inverse, title-slide
 
 # R Markdown
 ## On your marks, get set, ready go!
-### Thiyanga S. Talagala
+### <br/>Thiyanga S. Talagala
 ### 2016/12/28
 
 ---
 
+class: split-two white
+
+
+```r
+anicon::faa("leaf")
+```
+
+<span>&lt;i class="fas  fa-leaf faa-flash animated "&gt;&lt;/i&gt;</span>
+
+---
+class: middle center bg-main1
+---
+class: split-60 white
+---
 
 background-image:url("turtle1.jpg")
 
@@ -111,6 +127,7 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yih
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false
