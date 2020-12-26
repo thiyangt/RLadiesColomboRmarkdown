@@ -90,6 +90,23 @@ background-image:url("screenshots/17img.png")
 background-size: contain
 
 ---
+## Hi
+
+<video width="100%" height="100%" controls id="sc1">
+    <source src="media/sc1.mp4" type="video/mp4">
+</video>
+
+---
+## Hello!
+
+<video width="100%" height="100%">
+<source src="static/rmarkdown_rladies/media/sc1.mp4" type="video/mp4">
+</video>
+---
+
+<iframe width="560" height="315" src="media/sc1.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 class: middle center bg-main1
 
