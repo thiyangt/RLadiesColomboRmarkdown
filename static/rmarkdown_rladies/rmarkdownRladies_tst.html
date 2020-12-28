@@ -4,6 +4,7 @@
     <title>R Markdown</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
+    <meta name="date" content="2020-12-28" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/chocolate-fonts.css" rel="stylesheet" />
@@ -15,13 +16,32 @@
 class: center, middle, inverse, title-slide
 
 # R Markdown
-## On your marks, get set, ready go!
+## On your marks, get set, ready, go!
 ### <br/>Thiyanga S. Talagala
-### 2020 December 28
+### December 28, 2020
 
 ---
 
+
+
 class: middle center bg-main1
+
+# Packages 
+
+## `install.packages("rmarkdown")`
+
+## `install.packages("knitr")`
+
+
+--
+
+<span>&lt;i class="fas  fa-bell fa-5x faa-ring animated "&gt;&lt;/i&gt;</span>
+
+## Additional packages
+
+## `install.packages("tidyverse")`
+## `install.packages("reticulate")`
+
 ---
 background-image:url("screenshots/1img.png")
 background-size: contain
@@ -250,18 +270,173 @@ background-size:contain
 background-image:url("sc1/c15.png")
 background-size:contain
 
+
+---
+
+# Change Header
+
+.pull-left[
+
+**Code**
+
+```r
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+```
+
+]
+
+.pull-right[
+
+**Output**
+
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+
+
+]
+
+---
+
+# Add content
+
+.pull-left[
+
+**Code**
+
+```r
+
+# Header 1
+
+This is section 1.
+
+## Header 2
+
+This is section 1.2
+
+### Header 3
+
+This is section 1.2.1
+
+```
+
+]
+
+.pull-right[
+
+**Output**
+
+
+# Header 1
+
+This is section 1.
+
+## Header 2
+
+This is section 1.2
+
+### Header 3
+
+This is section 1.2.1
+
+
+
+
+]
+
+---
+
+# Text formatting
+
+.pull-left[
+
+## Code
+
+&lt;img src="sc1/text.png" alt="text" width="300"/&gt;
+
+
+]
+
+.pull-right[
+
+## Output
+
+*M1: This text is in italics.*
+
+_M2: This is also italics._
+
+**M3: This text is in bold.**
+
+__M4: This is also bold.__
+
+
+~~This text is strikethrough.~~
+
+]
+
+
 ---
 
 class: middle center bg-main1
 
-<span>&lt;i class="fas  fa-leaf fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
+<span>&lt;i class="fas  fa-align-center fa-5x faa-pulse animated "&gt;&lt;/i&gt;</span>
 
-# Customizing your R Markdown document: code chunk
+# Include R codes
 
 ---
 
 background-image:url("sc1/c17.png")
 background-size:contain
+
+
+---
+
+background-image:url("sc1/inline-0.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-4.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-5.png")
+background-size:contain
+
+---
+class: middle center bg-main1
+
+<span>&lt;i class="fas  fa-exclamation-triangle fa-7x faa-flash animated "&gt;&lt;/i&gt;</span>
+
+# Anatomy of R Markdown
+
+
 
 ---
 
@@ -356,6 +531,8 @@ background-size:contain
 
 class: middle center bg-main1
 
+<span>&lt;i class="fas  fa-exclamation-circle fa-7x faa-bounce animated "&gt;&lt;/i&gt;</span>
+
 # Chunk options
 
 ---
@@ -387,10 +564,87 @@ background-size:contain
 ## eval [TRUE/ FALSE]
 
 ---
+class: bg-main1
+
+# Chunk options
+
+* `eval = FALSE` - prevent the code from being evaluated
+
+* `include = FALSE` - run the code but doesn't show it in the final document
+
+* `echo = FALSE` - prevent the code but not the results from appearing
+
+* `message = FALSE` - prevent messages from appearing in the finished file
+
+* `results = "hide"` - hide the printed output
+
+* `error = TRUE` - cause the render to continue even if the code returns an error
+
+* `comment=NA` - remove # from the  output
+
+--
+
+.pull-left[
+
+Without `comment=NA`
+
+
+```r
+a &lt;- 1:5; a
+```
+
+```
+## [1] 1 2 3 4 5
+```
+
+]
+
+.pull-right[
+
+With `comment=NA`
+
+
+```r
+a &lt;- 1:5; a
+```
+
+```
+[1] 1 2 3 4 5
+```
+
+
+]
+---
+
+background-image:url("sc1/equations.png")
+background-size:contain
+
+# Mathematical Equations
+
+
+
+
+
+
+---
+
+class: middle center bg-main1
+
+## How to type Greek letters?
+
+Please read my blog post here: 
+
+https://thiyanga.netlify.app/post/greekletters/
+
+
+---
+
 
 class: middle center bg-main1
 
 # Styling your R Markdown document
+
+<span>&lt;i class="fas  fa-thumbs-up fa-5x faa-float animated "&gt;&lt;/i&gt;</span>
 
 ## YAML
 
@@ -444,6 +698,8 @@ class: middle center bg-main1
 
 # Styling your R Markdown document
 
+<span>&lt;i class="fas  fa-cogs fa-5x faa-vertical animated "&gt;&lt;/i&gt;</span>
+
 ## theme
 
 
@@ -472,6 +728,8 @@ class: middle center bg-main1
 
 # Styling your R Markdown document
 
+<span>&lt;i class="fas  fa-cogs fa-5x faa-vertical animated "&gt;&lt;/i&gt;</span>
+
 ## highlight
 
 ---
@@ -484,11 +742,76 @@ background-size:contain
 background-image:url("sc1/SC/s22.png")
 background-size:contain
 
+
+---
+
+
+.pull-left[
+
+## Themes
+
+- default
+
+- cerulean
+
+- journal
+
+- flatly
+
+- darkly
+
+- readable
+
+- spacelab
+
+- united
+
+- cosmo
+
+- lumen
+
+- paper
+
+- sandstone
+
+- simplex
+
+- yeti
+
+
+]
+.pull-right[
+
+## Highlight
+
+- default
+
+- tango
+
+- espresso
+
+- zenburn
+
+- haddock
+
+- breezedark
+
+- kate
+
+- monochrome
+
+]
+
+
+
+
 ---
 
 class: middle center bg-main1
 
 # Styling your R Markdown document
+
+<span>&lt;i class="fas  fa-cogs fa-5x faa-vertical animated "&gt;&lt;/i&gt;</span>
 
 ## Tabbed Sections
 
@@ -508,6 +831,8 @@ background-size:contain
 class: middle center bg-main1
 
 # R Markdown to R script
+
+<span>&lt;i class="fas  fa-cogs fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
 
 
 ---
@@ -574,13 +899,19 @@ class: middle center bg-main1
 
 # R script to R Markdown
 
-## Method 1 (Using Rstudio)
+## Method 2 (Using R console)
+
+```r
+rmarkdown::render('11-Demo.R')
+```
 
 ---
 
 class: middle center bg-main1
 
 # Document your Analysis
+
+<span>&lt;i class="fas  fa-cogs fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
 
 ---
 
@@ -624,15 +955,28 @@ class: middle center bg-main1
 
 # Include Latex tables
 
+<span>&lt;i class="fas  fa-cogs fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
+
 ---
+
+
 
 background-image:url("sc1/SC/s39.png")
 background-size:contain
 
 ---
+
+background-image:url("sc1/courseoutline.png")
+background-size:contain
+
+---
+
+
 class: middle center bg-main1
 
 # Include images
+
+<span>&lt;i class="fas  fa-cogs fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
 
 ---
 
@@ -650,12 +994,115 @@ background-image:url("sc1/SC/s42.png")
 background-size:contain
 
 ---
+class: middle center bg-main1
+
+# Python and R together
+
+## `install.packages("reticulate")`
+
+![](reticulated_python.png)
+
+---
+
+background-image:url("sc1/python1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/python2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/python3.png")
+background-size:contain
+
+---
 
 class: middle center bg-main1
 
 # Parameterized R Markdown
 
+<span>&lt;i class="fas  fa-cogs fa-5x faa-spin animated "&gt;&lt;/i&gt;</span>
+
 ---
+
+
+background-image:url("sc1/param1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param4.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param5.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param6.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param7.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param8.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param8-2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param9.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Acknowledgements:
+
+
+## Yihui Xie, RStudio
+
+## Emi Tanaka, Monash University, Australia
+
+ ## All contributors 
+
+---
+
+class: middle center bg-main1
+
+# Thank you
+
+
+<span>&lt;i class="fab  fa-angellist fa-5x faa-shake animated "&gt;&lt;/i&gt;</span>
+
+## <span class=" faa-flash animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">Make some VOICE using R Makrkdown!</span>
+
+Slides are available at [https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1](https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1) 
+
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
