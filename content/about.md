@@ -3,6 +3,10 @@ date: "2016-05-05T21:48:51-07:00"
 title: Workshops/ Lectorials! 
 ---
 
+## 2021
+
+1. [Intro slides - Plot a lot with ggplot2](/2_ggplot2_intro/2_ggplot2_intro.html)
+
 
 ## 2020
 

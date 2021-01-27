@@ -1,0 +1,11 @@
+base
+xml2
+rvest
+DSjobtracker
+tidyr
+magrittr
+dplyr
+ggplot2
+viridisLite
+viridis
+forcats
