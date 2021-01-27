@@ -1,0 +1,145 @@
+---
+title: "Plot a lot with `ggplot2` to find plots!"
+subtitle: ""
+author: ""
+institute: "<br/> R Ladies - Colombo"
+date: "January 27, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, kunoichi, chocolate-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+---
+
+# Our Speaker
+
+.pull-left[
+
+
+Priyanga Dilini Talagala
+
+PhD, Monash University, Australia.
+
+]
+
+.pull-right[
+
+
+]
+
+---
+# Number of R packages submitted to CRAN
+
+```{r, comment=NA, message=FALSE}
+library(rvest)
+pkgs <- read_html("https://cran.r-project.org/web/packages/available_packages_by_name.html")
+mylines <- pkgs %>% 
+    html_nodes("tr") %>%
+    xml_text()
+nb_pkgs <- length(which(sapply(mylines, nchar)>5))
+print(paste("There are", nb_pkgs, "packages available in CRAN as of", Sys.Date()))
+
+```
+
+---
+
+background-image: url(1topdownloads.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+background-image: url(2topdownloads.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+background-image: url(3topdownloads.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+
+
+---
+## Top 20 downloaded R packages (from 26/12/ 2020 to 26/1/2021)
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10, fig.width=18}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(cranlogs)
+library(ggtextures) # devtools::install_github("clauswilke/ggtextures")
+library(extrafont)
+library(ggforce)
+top_20_month <- cran_top_downloads(when="last-month", count = 20)
+top_20_month <- top_20_month %>% mutate( ToHighlight = ifelse( package == "ggplot2", "yes", "no" ) )
+ggplot(top_20_month, 
+       aes(y = reorder(package, count), x = count)) +
+        geom_bar(stat="identity", fill = "#66a61e") + ylab("Package name") + xlab("Number of downloads") + 
+  theme(text=element_text(size=30))
+# low to high order
+#ggplot(top_20_month, 
+#       aes(y = reorder(package, -count), x = count)) +
+#        geom_bar(stat="identity")
+
+
+```
+
+
+---
+## Top 20 downloaded R packages (from 26/12/ 2020 to 26/1/2021)
+
+
+
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10, fig.width=18}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(cranlogs)
+library(ggtextures) # devtools::install_github("clauswilke/ggtextures")
+library(extrafont)
+library(ggforce)
+top_20_month <- cran_top_downloads(when="last-month", count = 20)
+top_20_month <- top_20_month %>% mutate( ToHighlight = ifelse( package == "ggplot2", "yes", "no" ) )
+ggplot(top_20_month, 
+       aes(y = reorder(package, count), x = count, fill=ToHighlight)) +
+        geom_bar(stat="identity") + ylab("Package name") + xlab("Number of downloads") + scale_fill_manual( values = c( "yes"="#e7298a", "no"="#66a61e" ), guide = FALSE ) + 
+  theme(text=element_text(size=30))
+# low to high order
+#ggplot(top_20_month, 
+#       aes(y = reorder(package, -count), x = count)) +
+#        geom_bar(stat="identity")
+
+
+```
+
+
+
+---
+
+# Thank you
+
+
+`r anicon::faa('angellist', animate='shake', size=5)`
+
+## `r anicon::nia("Make some VOICE using R Makrkdown!", size=9)`
+
+Slides are available at [https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1](https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1) 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+
