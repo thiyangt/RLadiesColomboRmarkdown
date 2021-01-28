@@ -225,13 +225,17 @@ pridiltal
 ---
 # Number of R packages submitted to CRAN
 
-```{r, comment=NA, message=FALSE, cache=TRUE}
+```{r, comment=NA, message=FALSE}
 library(rvest)
+
 pkgs <- read_html("https://cran.r-project.org/web/packages/available_packages_by_name.html")
+
 mylines <- pkgs %>% 
     html_nodes("tr") %>%
     xml_text()
+
 nb_pkgs <- length(which(sapply(mylines, nchar)>5))
+
 print(paste("There are", nb_pkgs, "packages available in CRAN as of", Sys.Date()))
 
 ```
@@ -341,21 +345,22 @@ background-size: contain
 ---
 class: middle center bg-main1
 
+.pull-left[
+
 ```{r, echo=FALSE}
 anicon::faa("bell", animate="ring", size=5)
 ```
 
 ## Next meetup: `Map creation with R`
 
-![](steph.jpg)
+]
 
-### Monash University/ QUT, Australia
+.pull-right[
 
----
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Republicans like to show off a map 🗺 of the country being red, but it’s mostly empty space.<br><br>Land doesn’t vote.<br><br>People do.<a href="https://twitter.com/hashtag/ThursdayThoughts?src=hash&amp;ref_src=twsrc%5Etfw">#ThursdayThoughts</a> <a href="https://twitter.com/hashtag/ElectionResults2020?src=hash&amp;ref_src=twsrc%5Etfw">#ElectionResults2020</a> <a href="https://t.co/6QKgWJzwjZ">pic.twitter.com/6QKgWJzwjZ</a></p>&mdash; David Leavitt (@David_Leavitt) <a href="https://twitter.com/David_Leavitt/status/1324354262030262272?ref_src=twsrc%5Etfw">November 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
+]
 
 
 
