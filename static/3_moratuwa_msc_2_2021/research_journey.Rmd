@@ -149,6 +149,12 @@ background-position: center
 background-size: contain
 ---
 
+background-image: url(6.png)
+background-position: center
+background-size: contain
+
+---
+
 class: middle center bg-main1
 
 ## Role of 
@@ -157,12 +163,6 @@ class: middle center bg-main1
 
 ## in Finance
 
-
----
-
-background-image: url(6.png)
-background-position: center
-background-size: contain
 
 ---
 
@@ -352,7 +352,7 @@ Weekly notified dengue cases in 25 districts
 
 - Shift a wavelet to the right until you have covered the whole signal.
 
-- Scale (stretch) the wavelet and repreat
+- Scale (stretch) the wavelet and repeat
 
 
 ---
@@ -673,7 +673,7 @@ background-size: contain
 
 ## Distributed Lag-Nonlinear Models
 
-- Simulteneouly describe **nonlinear** and **delayed (lag-effects)** dependencies.
+- Simultaneously describe the **nonlinear** and **delayed (lag-effects)** dependencies.
 
 
 ---
@@ -687,6 +687,48 @@ background-size: contain
 background-image: url(d6.png)
 background-position: center
 background-size: contain
+
+---
+
+## Conclusions
+
+- Two peaks of the disease occur at annual and semi annual scale.
+
+- Two clusters based on dengue dynamic pattern were identified.
+
+- Except Kalutara and Trincomalee districts distribution of other districts among clusters may have influenced from monsoon winds.
+
+- Dengue incidence showed significant coherence with all climatic factors but with different periodicities and phase relationships.
+
+- Wavelet phase analysis revealed a lag difference between climate variables and dengue incidence.
+
+- 22 change points were detected in the variation of dengue cases based on CPA.
+
+- CPA revealed changes in the variation of dengue incidence was very much similar to the changes in precipitation, humidity and maximum temperature.
+
+---
+
+## Conclusions (cont.)
+
+- DLNM revealed,
+
+    - Mean Temperature 250C – 270C at lag 1 – 8 weeks
+    - Precipitation > 70mm at lag 1- 5 weeks and 20- 50mm at  lag 10 – 20 weeks
+    - Humidity 65% - 80% at lag 10 – 18 weeks
+    - Visibility > 14 km
+    
+    have a **positive impact** on the occurrence of dengue incidence.
+    
+- DLNM revealed,
+
+    - Mean Temperature > 280C at lag 6 – 25 weeks
+    - Maximum Temperature lag 4 – 6 weeks
+    - Precipitation > 65mm at lag 15 – 20 weeks
+    - Humidity < 70% at lag 4 – 9 weeks
+    - Visibility < 14km
+    - Wind speed
+    
+    have a **negative impact** on the occurrence of dengue incidence.
 
 
 ---
@@ -710,25 +752,33 @@ background-size: contain
 - Text-based data and forecasting
 
 
+
 ---
 
-## Tips
+## Choosing a Topic & Framing a Research Question
 
 - Read good journal articles
 
-- Attend online seminars
+- Framing a Research Question
 
-- Explore
+    - Motivation, Research gap, Objectives
+    
+    - Be clear about the boundaries and conditions of your research
+    
+    - Identify the potential limitations
+
+- Make sure you stay up-to-date with the most recent developments in your field.
+
 
 
 
 ---
 
 
-## Thank you
+# Thank you
 
 
-#### Contact: ttalagala@sjp.ac.lk
+## Contact: ttalagala@sjp.ac.lk
 
 
 
