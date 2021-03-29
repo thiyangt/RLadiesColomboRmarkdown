@@ -46,5 +46,11 @@ knitr::include_graphics("CLBhexSticker.png")
 
 
 
+```{r, echo=FALSE}
+anicon::faa("twitter", animate="float", size=5, colour="lightblue")
+```
+
+# @RLadiesColombo
+
 
 
