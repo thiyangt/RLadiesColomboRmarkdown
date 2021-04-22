@@ -126,10 +126,7 @@ background-image: url(1.png)
 background-position: center
 background-size: contain
 
----
-background-image: url(2.png)
-background-position: center
-background-size: contain
+
 
 ---
 background-image: url(3.png)
@@ -142,11 +139,7 @@ background-image: url(4.png)
 background-position: center
 background-size: contain
 
----
 
-background-image: url(5.png)
-background-position: center
-background-size: contain
 ---
 
 background-image: url(6.png)
@@ -345,8 +338,6 @@ Weekly notified dengue cases in 25 districts
 
 - To identify seasonal oscillations with time-varying intensity and frequency.
 
-
----
 
 ## Wavelet Transform
 
@@ -759,7 +750,7 @@ background-size: contain
 
 - Read good journal articles
 
-- Framing a Research Question
+- Framing a research question
 
     - Motivation, Research gap, Objectives
     
@@ -780,6 +771,7 @@ background-size: contain
 
 ## Contact: ttalagala@sjp.ac.lk
 
+## web: https://thiyanga.netlify.app/
 
 
 

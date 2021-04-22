@@ -1,0 +1,245 @@
+---
+title: "Data Wrangling with R!"
+subtitle: ""
+author: ""
+institute: "<br/> R Ladies - Colombo"
+date: "April 22, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, kunoichi, chocolate-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: middle center bg-main1
+
+# R-Ladies
+
+![](talks.jpg)
+
+## R-Ladies is a world-wide organization to promote gender diversity in the R community.
+
+
+---
+background-image: url(map.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+
+---
+class:  middle center bg-main1
+
+.pull-left[
+
+## R-Ladies Global, San Francisco, CA
+
+```{r   out.width = "30%", echo = FALSE, fig.cap=''}
+knitr::include_graphics("globalhexSticker.png")
+```
+
+```{r, echo=FALSE}
+icon::fa("globe")
+```
+https://rladies.org/
+
+```{r, echo=FALSE}
+icon::fa("twitter")
+```
+@RLadies
+
+]
+
+.pull-right[
+
+
+## R-Ladies Colombo
+
+```{r   out.width = "30%", echo = FALSE, fig.cap=''}
+knitr::include_graphics("CLBhexSticker.png")
+```
+
+```{r, echo=FALSE}
+icon::fa("globe")
+```
+https://rladiescolombo.netlify.app/
+
+```{r, echo=FALSE}
+icon::fa("twitter")
+```
+
+@RLadiesColombo
+
+```{r, echo=FALSE}
+icon::fa("envelope")
+```
+
+colombo@rladies.org
+
+
+
+
+
+]
+
+---
+class: middle center bg-main1
+
+# Code of conduct
+
+R-Ladies is dedicated to providing a harassment-free experience for EVERYONE.
+
+To ensure a safe, enjoyable, and friendly experience for everyone who participates, we follow the [R-Ladies International Code of Conduct.](https://rladies.org/code-of-conduct/#:~:text=R%2DLadies%20is%20dedicated%20to,of%20participants%20in%20any%20form.&text=Anyone%20who%20violates%20this%20code,of%20the%20Global%20Leadership%20Team.)
+
+This code of conduct applies to all R-Ladies spaces, including meetups, Twitter, Slack, mailing lists, both online and offline.
+
+---
+background-image: url(cover.png)
+background-position: center
+background-size: contain
+
+
+
+
+
+---
+# Number of R packages submitted to CRAN
+
+```{r, comment=NA, message=FALSE}
+library(rvest)
+library(xml2)
+
+pkgs <- read_html("https://cran.r-project.org/web/packages/available_packages_by_name.html")
+
+mylines <- pkgs %>% 
+    html_nodes("tr") %>%
+    xml_text()
+
+nb_pkgs <- length(which(sapply(mylines, nchar)>5))
+
+print(paste("There are", nb_pkgs, "packages available in CRAN as of", Sys.Date()))
+
+```
+
+
+
+---
+## Top 20 downloaded R packages (from 22/3/ 2021 to 21/4/2021)
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10, fig.width=18}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(cranlogs)
+library(ggtextures) # devtools::install_github("clauswilke/ggtextures")
+library(extrafont)
+library(ggforce)
+top_20_month <- cran_top_downloads(when="last-month", count = 20)
+top_20_month <- top_20_month %>% mutate( ToHighlight = ifelse( package == "ggplot2", "yes", "no" ) )
+ggplot(top_20_month, 
+       aes(y = reorder(package, count), x = count)) +
+        geom_bar(stat="identity", fill = "#66a61e") + ylab("Package name") + xlab("Number of downloads") + 
+  theme(text=element_text(size=30))
+# low to high order
+#ggplot(top_20_month, 
+#       aes(y = reorder(package, -count), x = count)) +
+#        geom_bar(stat="identity")
+
+
+```
+
+
+---
+## Top 20 downloaded R packages (from 26/12/ 2020 to 26/1/2021)
+
+
+
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10, fig.width=18}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(cranlogs)
+library(ggtextures) # devtools::install_github("clauswilke/ggtextures")
+library(extrafont)
+library(ggforce)
+top_20_month <- cran_top_downloads(when="last-month", count = 20)
+top_20_month <- top_20_month %>% mutate( ToHighlight = ifelse( package == "dplyr", "yes", "no" ) )
+ggplot(top_20_month, 
+       aes(y = reorder(package, count), x = count, fill=ToHighlight)) +
+        geom_bar(stat="identity") + ylab("Package name") + xlab("Number of downloads") + scale_fill_manual( values = c( "yes"="#e7298a", "no"="#66a61e" ), guide = FALSE ) + 
+  theme(text=element_text(size=30))
+# low to high order
+#ggplot(top_20_month, 
+#       aes(y = reorder(package, -count), x = count)) +
+#        geom_bar(stat="identity")
+
+
+```
+
+
+
+
+---
+background-image: url(Cover-5DW.png)
+background-position: center
+background-size: contain
+
+
+`r anicon::faa('bell', animate='shake', size=5, colour="forestgreen")`
+
+---
+class: middle center bg-main1
+
+.pull-left[
+
+```{r, echo=FALSE}
+anicon::faa("bell", animate="ring", size=5, colour="yellow")
+```
+
+## Upcoming meetups
+
+
+]
+
+.pull-right[
+
+
+### Grammar of Experimental Design 
+
+### Tidy Tools for Forecasting 
+ 
+### Web Scraping
+
+### R Tips
+
+
+]
+
+
+
+
+
+---
+class: middle center bg-main1
+
+# Thank you
+
+```{r   out.width = "30%", echo = FALSE, fig.cap=''}
+knitr::include_graphics("CLBhexSticker.png")
+```
+
+
+
+```{r, echo=FALSE}
+anicon::faa("twitter", animate="float", size=5, colour="lightblue")
+```
+
+# @RLadiesColombo
+
+
+

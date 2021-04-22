@@ -5,6 +5,8 @@ title: Workshops/ Lectorials!
 
 ## 2021
 
+- [Intro slides - Data Wrangling with R](/5_datawrangling/5_data_wrangling.html)
+
 - Invited talk - Getting the most out of your research!, Reflections and lessons learned from my research journey. 
 
     Date: 14 February 2021

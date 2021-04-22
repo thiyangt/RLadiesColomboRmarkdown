@@ -1,0 +1,56 @@
+---
+title: "Machine Learning with R!"
+subtitle: ""
+author: ""
+institute: "<br/> R Ladies - Colombo"
+date: "March 21, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, kunoichi, chocolate-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: middle center bg-main1
+
+
+```{r, echo=FALSE}
+anicon::faa("bell", animate="ring", size=5, colour="yellow")
+```
+
+
+
+# Upcoming meetups
+
+### Data Wrangling 
+
+### Grammar of Experimental Design 
+
+### Tidy Tools for Forecasting 
+ 
+### Web Scraping
+
+### R Tips
+
+---
+class: middle center bg-main1
+
+# Thank you
+
+```{r   out.width = "30%", echo = FALSE, fig.cap=''}
+knitr::include_graphics("CLBhexSticker.png")
+```
+
+
+
+```{r, echo=FALSE}
+anicon::faa("twitter", animate="float", size=5, colour="lightblue")
+```
+
+# @RLadiesColombo
+
+
+
