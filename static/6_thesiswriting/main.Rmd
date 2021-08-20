@@ -186,6 +186,10 @@ knitr::include_graphics("mental.png")
 - Results
 
 - Discussion and Conclusions
+
+- Bibliography or list of references
+
+- Appendix
 ]
 
 
@@ -222,6 +226,10 @@ knitr::include_graphics("mental.png")
 - **Results**
 
 - **Discussion and Conclusions**
+
+- Bibliography or list of references
+
+- Appendix
 
 ]
 
@@ -662,6 +670,27 @@ overview of the literature. Chapter 3 illustrates the methodology used by the th
 
 
 ---
+# Literature Review
+
+To review the literature means to be able to identify:
+
+- What has been established
+
+- Areas of controversy 
+
+- Emerging trends and new approaches
+
+- Landmark papers/ Key references
+
+---
+
+# Literature review matrix
+
+![](Lit-matrix.png)
+
+source: https://www.monash.edu/rlo/graduate-research-writing/write-the-thesis/introduction-literature-reviews
+
+---
 # Chapter 2: Literature Review
 
 .pull-left[
@@ -685,7 +714,12 @@ overview of the literature. Chapter 3 illustrates the methodology used by the th
     - The limitations of a study/the gaps in the study.
 - Conclusions
 
-    - The main agreement and disagreement]
+    - The main agreement and disagreement
+    
+    - What you have drawn from reviewing the literature review?
+    
+    ]
+    
 
 ---
 
@@ -700,7 +734,7 @@ overview of the literature. Chapter 3 illustrates the methodology used by the th
 
 ---
 
-# Chronological: 
+# Chronological
 
 According to when they were published 
 
@@ -722,14 +756,372 @@ According to when they were published
 - Compare the results that emerge from using different methods
 
 
+---
+
+# Chapter 3: Methodology
+.pull-left[
+- Research design
+
+- Sources of Data
+
+- Sampling design 
+
+- Data analysis
+
+
+
+]
+
+.pull-right[
+
+- Statistical software
+
+- Statistical methods
+]
+
+---
+
+# Chapter 4: Results
+
+
+---
+
+class: inverse, middle, center
+
+# Data Visualization
+
+---
+# Cognitive Principles
+
+**Less conginitive effort to read the chart (what is presented) and save the time to think about the content of the chart**
+
+- Good visualizations take advantage of the human visual system's ability to process information with little effort. 
+
+--
+
+## Preattentive graph perception
+
+It requires no conscious effort from the viewer to do understand what is presented through the design. It's automated and takes between 200-500 milliseconds to complete in the spatial memory.
+
+--
+
+(**Spatial** working **memory** entails the ability to keep spatial information active in working memory over a short period of time.)
+
+---
+
+# Preattentive visual properties
+
+1. Color
+
+2. Form: collinearity, curvature, marks, shape, size, spatial grouping, length, width, breadth
+
+3. Spatial position: 2D, 3D
+
+4. Movement: flicker, movement
+
+```{r, comment=NA, echo=FALSE}
+library(anicon)
+anicon::faa("leaf")
+anicon::faa("leaf", animate="bounce")
+```
+
+
+
+These are processed in our sensory memory without our conscious thoughts (without having knowledge of something).
+
+---
+
+class: inverse, center, middle
+
+# Cognitive principles
+
+---
+# 1. Proximity
+
+.pull-left[
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+data(penguins)
+penguins[complete.cases(penguins),] %>%
+  count(species, sex) %>%
+  ggplot(aes(x=sex, y=n, fill=sex)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(~species) +   scale_fill_manual(values = c("#FB7BBE","#6096FD"))
+
+```
+]
+
+.pull-right[
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+data(penguins)
+penguins[complete.cases(penguins),] %>%
+  count(species, sex) %>%
+  ggplot(aes(x=species, y=n, fill=species)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(~sex) +   scale_fill_manual(values = c("darkorange","purple","cyan4"))
+
+```
+
+]
+
+---
+
+# 2. Similarity
+
+
+.pull-left[
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+data(penguins)
+penguins[complete.cases(penguins),] %>%
+  count(species, sex) %>%
+  ggplot(aes(x=sex, y=n, fill=sex)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(~species) +   scale_fill_manual(values = c("#FB7BBE","#6096FD"))
+
+```
+]
+
+.pull-right[
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+data(penguins)
+penguins[complete.cases(penguins),] %>%
+  count(species, sex) %>%
+  ggplot(aes(x=species, y=n, fill=species)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(~sex) +   scale_fill_manual(values = c("darkorange","purple","cyan4"))
+
+```
+
+]
+
+---
+
+# 3. Common region
+
+.pull-left[
+```{r, comment=NA, echo=F, warning=FALSE}
+ggplot(penguins) + geom_point(aes(x=bill_length_mm, y=bill_depth_mm, color=species)) + scale_color_manual(values = c("darkorange","purple","cyan4"))
+
+```
+
+]
+
+.pull-right[
+```{r, comment=NA, echo=F, warning=FALSE}
+ggplot(penguins) + geom_point(aes(x=bill_length_mm, y=bill_depth_mm, color=species)) + stat_ellipse(aes(x=bill_length_mm, y=bill_depth_mm, color=species, fill=species), geom="polygon", alpha=0.2)+ scale_color_manual(values = c("darkorange","purple","cyan4")) + 
+  scale_fill_manual(values = c("darkorange","purple","cyan4")) 
+
+```
+
+]
+
+---
+
+# 4. Common fate
+
+.pull-left[
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+
+library(coronavirus)
+coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>%  ggplot() + geom_line(aes(x=date, y=cases, color=country))
+
+```
+
+
+]
+
+--
+.pull-right[
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+US <- coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="US")
+India <- coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="India")
+df <- data.frame(India=India$cases, US=US$cases)
+ggplot(df, aes(x=US, y=India)) + geom_point()
+
+```
+
+
+]
+
+---
+
+# Visualize same data under different angles
+
+.pull-left[
+
+US vs India
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+
+library(coronavirus)
+coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>%  ggplot() + geom_line(aes(x=date, y=cases, color=country))
+
+```
+
+
+]
+
+.pull-right[
+
+US vs Russia
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+coronavirus %>% filter(country=="US" | country== "Russia") %>% filter(type=="confirmed") %>%  ggplot() + geom_line(aes(x=date, y=cases, color=country))
+
+```
+
+]
+
+---
+
+
+.pull-left[
+
+US vs India
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+
+US <- coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="US")
+India <- coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="India")
+df <- data.frame(India=India$cases, US=US$cases)
+ggplot(df, aes(x=US, y=India)) + geom_point()
+
+
+```
+
+
+]
+
+.pull-right[
+
+US vs Russia
+
+```{r, warning=FALSE, comment=NA, message=FALSE, echo=FALSE}
+US<- coronavirus %>% filter(country=="US" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="US")
+Russia <- coronavirus %>% filter(country=="Russia" | country== "India") %>% filter(type=="confirmed") %>% group_by(country, date) %>%
+  summarise(cases = sum(cases)) %>% filter(country=="Russia")
+df <- data.frame(US=US$cases, Russia=Russia$cases)
+ggplot(df, aes(x=US, y=Russia)) + geom_point()
+
+```
+
+]
+
+---
+
+# 5. Working memory
+
+More than seven categories decrease readability and increase comprehension time. 
+
+---
+background-image:url("dataviz.png")
+background-size: contain
+
+# Working with Figures
+
+Extracted from:
+
+Wang, E., Cook, D., & Hyndman, R. J. (2020). Calendar-based graphics for visualizing people’s daily schedules. Journal of Computational and Graphical Statistics, 29(3), 490-502.
+
+---
+# Exercise
+
+**US Adults Opinions on Climate Change Relevant Regulations**
+
+1. Require producing 20% of electricity from clean energy
+
+2. Regulate $CO_2$ as a pollutant
+
+3. Fund more research into renewable energy
+
+|   |  1 | 2  | 3  | 4  | 5  |
+|-----|-----|-----|-----|-----|-----|
+| Q1  |15   | 20  | 2  | 38  |  25 |
+| Q2  | 10  | 14  | 2  |  44 |   30|
+|  Q3 | 6  |  9 | 2  |  41 |  42|
+
+Response: Strongly support (1), Somewhat support (2), Refused (3), Somewhat oppose (4), Strongly opposed (5)
+
+
+
+---
+background-image:url("table.png")
+background-size: contain
+
+# Tables: Talagala and others, FFORMPP, IJF, 2021
+
+---
+
+
+# Referring to figues and tables: present tense
+
+*…results are presented in Table 5.1. Table 5.1 shows…*
+
+
+
+
+---
+# Results
+
+- Reporting results is not enough
+
+- Establish the connections between the patterns that emerge from your analysis and your research questions
+
+- Relate those connections to the existing research, theory and knowledge
+
+---
+
+# Chapter 5: Discussion and Conclusions
+
+**Discussion**
+
+- Synthesis of ideas and main findings
+
+- Significance of research findings
+
+- Problems encountered
+
+- Limitations
+
+- Future directions of research
+
+---
+
+# Chapter 5: Discussion and Conclusions
+
+**Conclusions**
+
+- Final statement that sums up the thesis as a whole
+
+- Reconnects to the introduction and main research problem
+
+- A broad general conclusions emerging from the discussion
+
+
 
 ---
 # Thank you
 
 
 ## Contact: ttalagala@sjp.ac.lk
-
-## web: https://thiyanga.netlify.app/
 
 
 

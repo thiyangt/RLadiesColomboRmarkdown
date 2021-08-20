@@ -5,7 +5,7 @@ title: Workshops/ Lectorials!
 
 ## 2021
 
-- Invited talk: Thesis Writing
+- [Invited talk: Thesis Writing](/6_thesiswriting/main.html)
 
   Date: 21 August 2021, 8.00am - 10.00am
   
