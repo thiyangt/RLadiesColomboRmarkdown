@@ -5,6 +5,14 @@ title: Workshops/ Lectorials!
 
 ## 2021
 
+- Invited talk: Thesis Writing
+
+  Date: 21 August 2021, 8.00am - 10.00am
+  
+  Venue: Online
+  
+  To-whom: MSc in Applied Statistics, Department of Statistics, University of Sri Jayewardenepura
+
 - [Intro slides - Data Wrangling with R](/5_datawrangling/5_data_wrangling.html)
 
 - Invited talk - Getting the most out of your research!, Reflections and lessons learned from my research journey. 
@@ -16,7 +24,7 @@ title: Workshops/ Lectorials!
     To-whom: MSc Students, Department of Mathematics, University of Moratuwa
 
 
-- [Intro slides - Plot a lot with ggplot2](/2_ggplot2_intro/2_ggplot2_intro.html)
+- [Introduction slides - Plot a lot with ggplot2](/2_ggplot2_intro/2_ggplot2_intro.html)
 
 
 ## 2020

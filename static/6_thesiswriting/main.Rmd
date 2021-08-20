@@ -1,0 +1,290 @@
+---
+title: "Thesis Writing"
+subtitle: "TO-WHOM: MSc in Applied Statistics, Department of Statistics, University of Sri Jayewardenepura"
+author: ""
+institute: "Dr Thiyanga S. Talagala"
+date: "August 21, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, "ninjutsu", metropolis, metropolis-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253"
+)
+```
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 30px;
+}
+</style>
+
+
+# Thesis Writing
+
+.pull-left[
+
+- **Physical space**
+
+
+]
+
+.pull-right[
+
+```{r, comment=NA, echo=FALSE}
+knitr::include_graphics("home.jpg")
+
+```
+
+
+]
+
+
+---
+
+# Thesis Writing
+
+.pull-left[
+
+- Physical space
+
+- **Calendar space**
+
+]
+
+.pull-right[
+
+```{r, comment=NA, echo=FALSE}
+knitr::include_graphics("calendar.jpeg")
+
+```
+
+
+]
+
+---
+
+# Thesis Writing
+
+.pull-left[
+
+- Physical space
+
+- Calendar space
+
+- **Mental space**
+]
+
+.pull-right[
+
+```{r, comment=NA, echo=FALSE}
+knitr::include_graphics("mental.png")
+
+```
+
+
+]
+
+
+---
+
+# Types of Theses
+
+1. Traditional thesis
+
+2. Thesis by publication
+
+---
+
+# Types of Theses
+
+1. Thesis by publication
+
+2. **Traditional thesis**
+
+
+
+---
+
+# Thesis Structure
+
+.pull-left[
+
+- Abstract and Keywords
+
+- Table of Contents
+
+- List of Figures
+
+- List of Tables
+
+- List of Abbreviations
+
+- Declaration
+
+- Acknowledgements
+
+]
+
+.pull-right[
+
+- Introduction
+
+- Literature Review
+
+- Methodology
+
+- Results
+
+- Discussion and Conclusions
+]
+
+
+
+---
+# Thesis Structure
+
+.pull-left[
+
+- **Abstract and Keywords**
+
+- Table of Contents
+
+- List of Figures
+
+- List of Tables
+
+- List of Abbreviations
+
+- Declaration
+
+- Acknowledgements
+
+]
+
+.pull-right[
+
+- **Introduction**
+
+- **Literature Review**
+
+- **Methodology**
+
+- **Results**
+
+- **Discussion and Conclusions**
+
+]
+
+
+---
+
+# Abstract
+
+**Do you want to make a good first impression one?**
+
+- A concise summary of the entire thesis
+
+- First part that most people will read
+
+- The last thing that you write
+
+
+
+---
+# Chapter 1: Introduction
+
+1.1 Background of the study
+
+1.2 Objectives of the study
+
+1.3 Significance of the study
+
+1.4 Thesis outline
+
+
+---
+
+# Chapter 1: Introduction
+
+**1.1 Background of the study**
+
+1.2 Objectives of the study
+
+1.3 Significance of the study
+
+1.4 Thesis outline
+
+
+---
+# 1.1 Background of the study
+
+- Give an overview of your research topic
+
+--
+
+- Outline current methods/ brief review of current knowledge
+
+--
+
+- Motivation for your research: Evaluate current methods/ knowledge
+
+- Show there is a need to be further research
+
+--
+
+- Introduce your research problem
+
+--
+
+- State the research problem
+
+--
+
+- State research aims/ objectives
+
+--
+
+- Outline the order of the information in the chapter
+
+
+
+---
+
+# Literature review
+
+
+
+
+- Chronological
+
+- By publication
+
+- By trend
+
+---
+
+# Chronological: According to when they were published
+
+
+
+
+---
+# Thank you
+
+
+## Contact: ttalagala@sjp.ac.lk
+
+## web: https://thiyanga.netlify.app/
+
+
+
