@@ -344,7 +344,7 @@ days. **It provide a benchmark of the short-term expected volatility, as futures
 inscribed on (see Whaley, 2008).** In fact, implied volatility reflects the market makers’ point of view about the
 expected volatility of the futures’ underlying assets. Therefore, since market makers are often among the most
 informed agents, implied volatility should outperform the historical one in forecasting the realized volatility
-of the futures’ underlying asset (Shu and Zhang, 2012).**"
+of the futures’ underlying asset (Shu and Zhang, 2012)."
 
 > Give an overview of your research topic: **Narrow down your topic**
 
@@ -602,6 +602,32 @@ production, freshwater renewal, and on the overall economic growth of the countr
 
 ---
 
+# Example
+
+**Comparison of Plant Species and Soil Traits at Sites Where Physaria ludoviciana
+(Silvery Bladderpod) is Present or Absent in Three States**
+
+.tiny[
+"**The overall goal of this research is to understand biogeographical and
+environmental factors that may explain why Physaria ludoviciana is present** in some sand
+prairies but absent from the biological composition in others. For this project, areas
+where P. ludoviciana is growing will be compared to nearby or parallel areas where it is
+absent from the community structure in three different states (IL, MN, and NE). **The
+specific objectives are to compare:**
+
+a) Plant species composition, and
+
+b) Soil traits (texture, calcium, magnesium, manganese, zinc, potassium, boron, copper,
+iron, sodium, phosphorus, sulfur, cation exchange capacity, organic matter, buffer pH and
+soil pH). "
+
+
+
+]
+
+source: https://www2.illinois.gov/dnr/grants/documents/wpfgrantreports/2008010w.pdf
+---
+
 # Chapter 1: Introduction
 
 1.1 Background of the study
@@ -740,6 +766,12 @@ According to when they were published
 
 - The development of the field over time
 
+Talagala, T. S., Hyndman, R. J., & Athanasopoulos, G. (2018). Meta-learning how to forecast time series. Monash Econometrics and Business Statistics Working Papers, 6, 18.
+
+---
+background-image:url("litreview.png")
+background-size: contain
+
 ---
 
 # Thematic 
@@ -759,29 +791,30 @@ According to when they were published
 ---
 
 # Chapter 3: Methodology
-.pull-left[
+
 - Research design
 
 - Sources of Data
 
 - Sampling design 
 
-- Data analysis
-
-
-
-]
-
-.pull-right[
-
 - Statistical software
 
-- Statistical methods
-]
+- Data analysis/ Statistical methods
+
+
+
+
 
 ---
 
 # Chapter 4: Results
+
+- Reporting results is not enough
+
+- Establish the connections between the patterns that emerge from your analysis and your research questions
+
+- Relate those connections to the existing research, theory and knowledge
 
 
 ---
@@ -793,7 +826,7 @@ class: inverse, middle, center
 ---
 # Cognitive Principles
 
-**Less conginitive effort to read the chart (what is presented) and save the time to think about the content of the chart**
+**Less cognitive effort to read the chart (what is presented) and save the time to think about the content of the chart**
 
 - Good visualizations take advantage of the human visual system's ability to process information with little effort. 
 
@@ -1071,21 +1104,14 @@ background-size: contain
 ---
 
 
-# Referring to figues and tables: present tense
+# Referring to Figures and Tables: present tense
 
-*…results are presented in Table 5.1. Table 5.1 shows…*
-
-
+*…results are presented in **T**able 5.1. **F**igure 2 shows…*
 
 
----
-# Results
 
-- Reporting results is not enough
 
-- Establish the connections between the patterns that emerge from your analysis and your research questions
 
-- Relate those connections to the existing research, theory and knowledge
 
 ---
 
