@@ -1078,12 +1078,22 @@ Wang, E., Cook, D., & Hyndman, R. J. (2020). Calendar-based graphics for visuali
 # Exercise
 
 **US Adults Opinions on Climate Change Relevant Regulations**
+.pull-left[
 
-1. Require producing 20% of electricity from clean energy
+Q1. Require producing 20% of electricity from clean energy
 
-2. Regulate $CO_2$ as a pollutant
+Q2. Regulate $CO_2$ as a pollutant
 
-3. Fund more research into renewable energy
+Q3. Fund more research into renewable energy
+
+Response: Strongly support (1), Somewhat support (2), Refused (3), Somewhat oppose (4), Strongly opposed (5) ]
+
+
+]
+
+.pull-right[
+
+
 
 |   |  1 | 2  | 3  | 4  | 5  |
 |-----|-----|-----|-----|-----|-----|
@@ -1091,8 +1101,9 @@ Wang, E., Cook, D., & Hyndman, R. J. (2020). Calendar-based graphics for visuali
 | Q2  | 10  | 14  | 2  |  44 |   30|
 |  Q3 | 6  |  9 | 2  |  41 |  42|
 
-Response: Strongly support (1), Somewhat support (2), Refused (3), Somewhat oppose (4), Strongly opposed (5)
 
+
+]
 
 
 ---
