@@ -5,27 +5,20 @@
     <link>/</link>
     <description>Recent content on Talks</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workshops/ Lectorials!</title>
       <link>/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>2021   Intro slides - Data Wrangling with R
-  Invited talk - Getting the most out of your research!, Reflections and lessons learned from my research journey.
-Date: 14 February 2021
+      <description>2021   Intro slides - Hierarchical Forecasting of Dengue Incidence in Sri Lanka
+  Invited talk: Thesis Writing
+Date: 21 August 2021, 8.00am - 10.00am
 Venue: Online
-To-whom: MSc Students, Department of Mathematics, University of Moratuwa
-  Intro slides - Plot a lot with ggplot2
-  2020   R Ladies Colombo - RMarkdown
-Workshop description: here&amp;hellip;
-R-Ladies Colombo Meetup</description>
+To-whom: MSc in Applied Statistics, Department of Statistics, University of Sri Jayewardenepura
+  Intro slides - Data Wrangling with R
+  Invited talk - Getting the most out of your research!, Reflections and lessons learned from my research journey.</description>
     </item>
     
   </channel>

@@ -5,6 +5,8 @@ title: Workshops/ Lectorials!
 
 ## 2021
 
+- [Intro slides - Hierarchical Forecasting of Dengue Incidence in Sri Lanka](/7_hts_intro/7_hts.html)
+
 - [Invited talk: Thesis Writing](/6_thesiswriting/main.html)
 
   Date: 21 August 2021, 8.00am - 10.00am
