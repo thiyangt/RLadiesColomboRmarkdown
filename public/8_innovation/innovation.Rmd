@@ -297,6 +297,12 @@ if (!is.null(x)) {
 
 ```
 
+
+---
+background-image: url(keynote.png)
+background-position: center
+background-size: contain
+
 ---
 
 # Small things matter a lot!
