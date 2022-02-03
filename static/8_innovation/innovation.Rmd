@@ -1,5 +1,5 @@
 ---
-title: "Data science: a game changer for science and innovation"
+title: "Data science: A game changer for science and innovation"
 subtitle: "" 
 author: 
   - "Thiyanga S. Talagala, PhD"
@@ -49,7 +49,7 @@ style_mono_accent(
 
 class: middle, center
 
-# **Data science:** a game changer for science and innovation
+# **Data science:** A game changer for science and innovation
 
 ---
 background-image: url(orange.jpeg)
@@ -178,6 +178,15 @@ $$Y = f(X)$$
 
 - Incorporate this into the device to generate an alert when the likelihood of having  Preeclampsia is high.
 
+---
+background-image: url(sydney.jpg)
+background-position: center
+background-size: cover
+
+---
+background-image: url(s1.png)
+background-position: center
+background-size: contain
 ---
 class: middle, center
 
