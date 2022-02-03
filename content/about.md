@@ -5,6 +5,10 @@ title: Workshops/ Lectorials!
 
 ## 2021
 
+- [Invencao - Innovative data competition](/8_innovation/innovation.html)
+
+## 2021
+
 - [Intro slides - Hierarchical Forecasting of Dengue Incidence in Sri Lanka](/7_hts_intro/7_hts.html)
 
 - [Invited talk: Thesis Writing](/6_thesiswriting/main.html)
