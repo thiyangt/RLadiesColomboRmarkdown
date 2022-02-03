@@ -3,7 +3,7 @@ date: "2016-05-05T21:48:51-07:00"
 title: Workshops/ Lectorials! 
 ---
 
-## 2021
+## 2022
 
 - [Invencao - Innovative data competition](/8_innovation/innovation.html)
 
