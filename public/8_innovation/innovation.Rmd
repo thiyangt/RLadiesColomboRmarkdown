@@ -278,6 +278,11 @@ source: https://www.coursera.org/learn/reproducible-research
 `nic`: Nature inspired colour palette for data visualization.
 
 ---
+background-image: url(nic.png)
+background-position: center
+background-size: contain
+
+---
 
 # Impact
 
