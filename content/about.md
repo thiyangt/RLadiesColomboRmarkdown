@@ -5,7 +5,7 @@ title: Workshops/ Lectorials!
 
 ## 2022
 
-- [R Markdown: Communicate in a SMART way!](/9_rmarkdown_rladies/)
+- [R Markdown: Communicate in a SMART way!](/rmarkdown_rladies/rmarkdownRladiesNigeria.html)
 
 - [Invencao - Innovative data competition](/8_innovation/innovation.html)
 
