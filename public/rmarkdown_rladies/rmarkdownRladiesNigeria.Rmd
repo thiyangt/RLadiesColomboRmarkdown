@@ -1,0 +1,1104 @@
+---
+title: "R Markdown"
+subtitle: "Communicate in a SMART way!"
+author: "Invited Talk - R Ladies Abuja, Nigeria"
+institute: "<br/>Thiyanga S. Talagala"
+date: "February 15, 2022"
+output:
+  xaringan::moon_reader:
+    css: [default, kunoichi, chocolate-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+class: middle center bg-main1
+
+# Packages 
+
+## `install.packages("rmarkdown")`
+
+## `install.packages("knitr")`
+
+
+--
+
+```{r, echo=FALSE}
+anicon::faa("bell", animate="ring", size=5)
+```
+
+## Additional packages
+
+## `install.packages("tidyverse")`
+## `install.packages("reticulate")`
+
+---
+background-image:url("screenshots/1img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/2img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/3img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/4img.png")
+background-size: contain
+---
+background-image:url("screenshots/5img.png")
+background-size: contain
+---
+background-image:url("screenshots/6img.png")
+background-size: contain
+---
+background-image:url("screenshots/7img.png")
+background-size: contain
+---
+background-image:url("screenshots/8img.png")
+background-size: contain
+---
+background-image:url("screenshots/9img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/10img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/11img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/12img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/13img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/14img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/15img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/16img.png")
+background-size: contain
+
+---
+background-image:url("screenshots/17img.png")
+background-size: contain
+
+---
+class: middle center bg-main1
+
+```{r, echo=FALSE}
+anicon::faa("wrench", size=5)
+```
+
+# Creating an R Markdown document
+
+---
+
+background-image: url(rmarkdown_step1.png)
+background-position: center
+background-size: contain
+
+
+---
+background-image: url(rmarkdown_step2.png)
+background-position: center
+background-size: contain
+
+---
+
+background-image: url(rmarkdown_step2_1.png)
+background-position: center
+background-size: contain
+---
+
+background-image: url(rmarkdown_step3.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+
+---
+
+background-image: url(rmarkdown_step4.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+# Select a folder to save the document 
+
+![](rmarkdown_save1.png)
+---
+
+# Give a name to the document
+
+![](rmarkdown_save2.png)
+
+---
+
+background-image: url(rmarkdown_step5.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+background-image: url(rmarkdown_step6.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+background-image: url(rmarkdown_step7.png)
+background-position: center
+background-size: contain
+
+class: center, middle
+
+---
+
+# Demo
+
+<video width="100%" height="100%" controls id="sc1">
+<source src="media/1_media.mp4" type="video/mp4">
+</video>
+
+---
+
+<iframe width="860" height="315" src="media/1_media.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+---
+
+# R Markdown pipeline
+
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('Rmarkdownpipeline.jpeg')
+```
+
+Image source: [here](https://rmarkdown.rstudio.com/authoring_quick_tour.html)
+
+
+
+---
+background-image:url("anatomy.jpeg")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+```{r, echo=FALSE}
+anicon::faa("leaf", animate="spin", size=5)
+```
+
+# Customizing your R Markdown document: text
+
+
+---
+background-image:url("sc1/c1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c4.png")
+background-size:contain
+
+---
+background-image:url("sc1/c5.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c6.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c7.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c8.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c9.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c13.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c14.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/c15.png")
+background-size:contain
+
+
+---
+
+# Change Header
+
+.pull-left[
+
+**Code**
+
+```r
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+```
+
+]
+
+.pull-right[
+
+**Output**
+
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+
+
+]
+
+---
+
+# Add content
+
+.pull-left[
+
+**Code**
+
+```r
+
+# Header 1
+
+This is section 1.
+
+## Header 2
+
+This is section 1.2
+
+### Header 3
+
+This is section 1.2.1
+
+```
+
+]
+
+.pull-right[
+
+**Output**
+
+
+# Header 1
+
+This is section 1.
+
+## Header 2
+
+This is section 1.2
+
+### Header 3
+
+This is section 1.2.1
+
+
+
+
+]
+
+---
+
+# Text formatting
+
+.pull-left[
+
+## Code
+
+<img src="sc1/text.png" alt="text" width="300"/>
+
+
+]
+
+.pull-right[
+
+## Output
+
+*M1: This text is in italics.*
+
+_M2: This is also italics._
+
+**M3: This text is in bold.**
+
+__M4: This is also bold.__
+
+
+~~This text is strikethrough.~~
+
+]
+
+
+---
+
+class: middle center bg-main1
+
+```{r, echo=FALSE}
+anicon::faa("align-center", animate="pulse", size=5)
+```
+
+# Include R codes
+
+---
+
+background-image:url("sc1/c17.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/inline-0.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-4.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/inline-5.png")
+background-size:contain
+
+---
+class: middle center bg-main1
+
+`r anicon::faa('exclamation-triangle', animate='flash', size=7)`
+
+# Anatomy of R Markdown
+
+
+
+---
+
+class: middle center bg-main1
+
+
+
+# Anatomy of R Markdown
+
+## code chunk
+
+---
+
+
+background-image:url("sc1/c18.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+
+
+# Anatomy of R Markdown
+
+## Text
+
+---
+
+background-image:url("sc1/c20.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Anatomy of R Markdown
+
+## YAML
+
+### HTML Document
+
+---
+
+background-image:url("sc1/c19.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Anatomy of R Markdown
+
+## YAML
+
+### PDF Document
+
+
+---
+
+background-image:url("sc1/SC/s1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s2.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Anatomy of R Markdown
+
+## YAML
+
+### Word Document
+
+
+
+---
+
+background-image:url("sc1/SC/s3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s4.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+`r anicon::faa('exclamation-circle', animate='bounce', size=7)`
+
+# Chunk options
+
+---
+
+background-image:url("sc1/SC/s5.png")
+background-size:contain
+
+## fig.width/ fig.height
+
+---
+background-image:url("sc1/SC/s7.png")
+background-size:contain
+
+## fig.width/ fig.height
+
+---
+
+background-image:url("sc1/SC/s6.png")
+background-size:contain
+
+## echo [TRUE/ FALSE]
+
+
+---
+
+background-image:url("sc1/SC/s8.png")
+background-size:contain
+
+## eval [TRUE/ FALSE]
+
+---
+class: bg-main1
+
+# Chunk options
+
+* `eval = FALSE` - prevent the code from being evaluated
+
+* `include = FALSE` - run the code but doesn't show it in the final document
+
+* `echo = FALSE` - prevent the code but not the results from appearing
+
+* `message = FALSE` - prevent messages from appearing in the finished file
+
+* `results = "hide"` - hide the printed output
+
+* `error = TRUE` - cause the render to continue even if the code returns an error
+
+* `comment=NA` - remove # from the  output
+
+--
+
+.pull-left[
+
+Without `comment=NA`
+
+```{r}
+a <- 1:5; a
+```
+
+]
+
+.pull-right[
+
+With `comment=NA`
+
+```{r, comment=NA}
+a <- 1:5; a
+```
+
+
+]
+---
+
+background-image:url("sc1/equations.png")
+background-size:contain
+
+# Mathematical Equations
+
+
+
+
+
+
+---
+
+class: middle center bg-main1
+
+## How to type Greek letters?
+
+Please read my blog post here: 
+
+https://thiyanga.netlify.app/post/greekletters/
+
+
+---
+
+
+class: middle center bg-main1
+
+# Styling your R Markdown document
+
+`r anicon::faa('thumbs-up', animate='float', size=5)`
+
+## YAML
+
+---
+background-image:url("sc1/SC/s9.png")
+background-size:contain
+
+## toc: true
+
+---
+
+background-image:url("sc1/SC/s10.png")
+background-size:contain
+
+## toc_float: true
+
+---
+
+background-image:url("sc1/SC/s11.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/SC/s12.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s13.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s14.png")
+background-size:contain
+
+## number_sections
+
+---
+
+background-image:url("sc1/SC/s15.png")
+background-size:contain
+
+---
+background-image:url("sc1/SC/s16.png")
+background-size:contain
+
+---
+class: middle center bg-main1
+
+# Styling your R Markdown document
+
+`r anicon::faa('cogs', animate='vertical', size=5)`
+
+## theme
+
+
+---
+background-image:url("sc1/SC/s17.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s18.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/SC/s19.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s20.png")
+background-size:contain
+
+---
+class: middle center bg-main1
+
+# Styling your R Markdown document
+
+`r anicon::faa('cogs', animate='vertical', size=5)`
+
+## highlight
+
+---
+
+background-image:url("sc1/SC/s21.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s22.png")
+background-size:contain
+
+
+---
+
+
+.pull-left[
+
+## Themes
+
+- default
+
+- cerulean
+
+- journal
+
+- flatly
+
+- darkly
+
+- readable
+
+- spacelab
+
+- united
+
+- cosmo
+
+- lumen
+
+- paper
+
+- sandstone
+
+- simplex
+
+- yeti
+
+
+]
+.pull-right[
+
+## Highlight
+
+- default
+
+- tango
+
+- espresso
+
+- zenburn
+
+- haddock
+
+- breezedark
+
+- kate
+
+- monochrome
+
+]
+
+
+
+
+---
+
+class: middle center bg-main1
+
+# Styling your R Markdown document
+
+`r anicon::faa('cogs', animate='vertical', size=5)`
+
+## Tabbed Sections
+
+
+---
+
+background-image:url("sc1/SC/s23.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s24.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# R Markdown to R script
+
+`r anicon::faa('cogs', animate='spin', size=5)`
+
+
+---
+
+background-image:url("sc1/SC/s25.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s26.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s27.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s28.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# R script to R Markdown
+
+## Method 1 (Using Rstudio)
+
+---
+
+
+background-image:url("sc1/SC/s29.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/SC/s30.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s30-1.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s31.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s32.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# R script to R Markdown
+
+## Method 2 (Using R console)
+
+```r
+rmarkdown::render('11-Demo.R')
+```
+
+---
+
+class: middle center bg-main1
+
+# Document your Analysis
+
+`r anicon::faa('cogs', animate='spin', size=5)`
+
+---
+
+
+background-image:url("sc1/SC/s33.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/SC/s34.png")
+background-size:contain
+
+
+---
+
+background-image:url("sc1/SC/s35.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s36.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s37.png")
+background-size:contain
+
+---
+
+
+background-image:url("sc1/SC/s38.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Include Latex tables
+
+`r anicon::faa('cogs', animate='spin', size=5)`
+
+---
+
+
+
+background-image:url("sc1/SC/s39.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/courseoutline.png")
+background-size:contain
+
+---
+
+
+class: middle center bg-main1
+
+# Include images
+
+`r anicon::faa('cogs', animate='spin', size=5)`
+
+---
+
+background-image:url("sc1/SC/s40.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s41.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/SC/s42.png")
+background-size:contain
+
+---
+class: middle center bg-main1
+
+# Python and R together
+
+## `install.packages("reticulate")`
+
+![](reticulated_python.png)
+
+---
+
+background-image:url("sc1/python1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/python2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/python3.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Parameterized R Markdown
+
+`r anicon::faa('cogs', animate='spin', size=5)`
+
+---
+
+
+background-image:url("sc1/param1.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param3.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param4.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param5.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param6.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param7.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param8.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param8-2.png")
+background-size:contain
+
+---
+
+background-image:url("sc1/param9.png")
+background-size:contain
+
+---
+
+class: middle center bg-main1
+
+# Acknowledgements:
+
+
+## Yihui Xie, RStudio
+
+## Emi Tanaka, Monash University, Australia
+
+ ## All contributors 
+
+---
+
+class: middle center bg-main1
+
+# Thank you
+
+
+`r anicon::faa('angellist', animate='shake', size=5)`
+
+## `r anicon::nia("Make some VOICE using R Makrkdown!", size=9)`
+
+Slides are available at [https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1](https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1) 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+
