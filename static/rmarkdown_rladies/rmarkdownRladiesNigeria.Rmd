@@ -3,7 +3,7 @@ title: "R Markdown"
 subtitle: "Communicate in a SMART way!"
 author: "Invited Talk - R Ladies Abuja, Nigeria"
 institute: "<br/>Thiyanga S. Talagala"
-date: "February 15, 2022"
+date: "February 16, 2022"
 output:
   xaringan::moon_reader:
     css: [default, kunoichi, chocolate-fonts]
