@@ -1113,7 +1113,7 @@ class: middle center bg-main1
 
 ## `r anicon::nia("Make some VOICE using R Makrkdown!", size=9)`
 
-Slides are available at [https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1](https://talks-thiyanga.netlify.app/rmarkdown_rladies/rmarkdownrladies_tst#1) 
+Slides are available at [https://thiyanga.netlify.app/talk/nigeria/](https://thiyanga.netlify.app/talk/nigeria/) 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
