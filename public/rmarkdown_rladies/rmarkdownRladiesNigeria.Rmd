@@ -1074,6 +1074,22 @@ background-image:url("sc1/param9.png")
 background-size:contain
 
 ---
+background-image:url("screenshots/bookdown.png")
+background-size:contain
+
+---
+background-image:url("screenshots/posterdown2.png")
+background-size:contain
+
+---
+background-image:url("screenshots/powerpoint.png")
+background-size:contain
+
+---
+background-image:url("screenshots/vitae.png")
+background-size:contain
+
+---
 
 class: middle center bg-main1
 

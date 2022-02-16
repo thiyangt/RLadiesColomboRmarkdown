@@ -1074,19 +1074,19 @@ background-image:url("sc1/param9.png")
 background-size:contain
 
 ---
-background-image:url("sc1/bookdown.png")
+background-image:url("screenshots/bookdown.png")
 background-size:contain
 
 ---
-background-image:url("sc1/posterdown2.png")
+background-image:url("screenshots/posterdown2.png")
 background-size:contain
 
 ---
-background-image:url("sc1/powerpoint.png")
+background-image:url("screenshots/powerpoint.png")
 background-size:contain
 
 ---
-background-image:url("sc1/vitae.png")
+background-image:url("screenshots/vitae.png")
 background-size:contain
 
 ---
