@@ -1,0 +1,107 @@
+---
+title: "Online Lunchtime Seminar"
+subtitle: "Uses and Misuses of Statistics" 
+author: 
+  - ""
+  - "Statistical Consulting Service"
+  - "Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura"
+date: ''
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#081d58",
+  text_bold_color = "#fcfc23",
+  title_slide_text_color = "#edf8b1",
+  header_font_google = google_font("Josefin Sans"),
+  base_font_size = "18px",
+  text_font_size = "1.5rem",
+ # code_inline_font_size = "1em",
+  code_font_size="1em"
+ #text_font_google   = google_font("Montserrat", "300", "300i")
+ # code_font_google   = google_font("Fira Mono")
+)
+```
+
+
+class: middle, center, inverse
+
+# Online Lunchtime Seminar
+
+## **Uses and Misuses of Statistics**
+
+```{r, echo=FALSE}
+anicon::faa("bullhorn", animate="ring", size=5)
+``` 
+
+Statistical Consulting Service, Department of Statistics
+
+Faculty of Applied Sciences, University of Sri Jayewardenepura
+
+
+
+---
+
+## Statistical Consulting Service: Our services
+
+- We provide assistance in areas such as:
+
+    - Experimental design
+    
+    - Questionnaire design and sampling
+    
+    - Data cleaning
+
+    - Data visualization
+    
+    - Statistical modeling
+
+    - Data analysis and interpretation of results
+
+    - Assistance with statistical software and programming
+
+--
+- Dashboard development and deployment
+
+
+---
+
+
+# For more information,
+
+
+[https://www.sjp.ac.lk/news/statistical-consulting-service-for-researchers-and-industrial-organizations/](https://www.sjp.ac.lk/news/statistical-consulting-service-for-researchers-and-industrial-organizations/)
+
+---
+background-image: url(2.png)
+background-size: cover
+
+---
+class:inverse
+background-image: url(d.png)
+background-size: contain
+

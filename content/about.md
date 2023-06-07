@@ -3,6 +3,10 @@ date: "2016-05-05T21:48:51-07:00"
 title: Workshops/ Lectorials! 
 ---
 
+## 2023
+
+- [Online lunchtime seminar series](/9_scs/scs.html)
+
 ## 2022
 
 - [R Markdown: Communicate in a SMART way!](/rmarkdown_rladies/rmarkdownRladiesNigeria.html)
