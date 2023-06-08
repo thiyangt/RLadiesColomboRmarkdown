@@ -58,7 +58,7 @@ class: middle, center, inverse
 anicon::faa("bullhorn", animate="ring", size=5)
 ``` 
 
-Statistical Consulting Service, Department of Statistics
+Statistical Consulting Service, Department of Statistics,
 
 Faculty of Applied Sciences, University of Sri Jayewardenepura
 
