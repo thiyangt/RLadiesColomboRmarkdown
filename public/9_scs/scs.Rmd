@@ -105,3 +105,61 @@ class:inverse
 background-image: url(d.png)
 background-size: contain
 
+---
+class: middle, center, inverse
+
+# Online Lunchtime Seminar
+
+## **Statistical Inference: What, Why, and How**
+
+```{r, echo=FALSE}
+anicon::faa("bullhorn", animate="ring", size=5)
+``` 
+
+Statistical Consulting Service, Department of Statistics,
+
+Faculty of Applied Sciences, University of Sri Jayewardenepura
+
+---
+
+
+## Statistical Consulting Service: Our services
+
+- We provide assistance in areas such as:
+
+    - Experimental design
+    
+    - Questionnaire design and sampling
+    
+    - Data cleaning
+
+    - Data visualization
+    
+    - Statistical modeling
+
+    - Data analysis and interpretation of results
+
+    - Assistance with statistical software and programming
+
+--
+- Dashboard development and deployment
+
+
+---
+
+
+# For more information,
+
+
+[https://www.sjp.ac.lk/news/statistical-consulting-service-for-researchers-and-industrial-organizations/](https://www.sjp.ac.lk/news/statistical-consulting-service-for-researchers-and-industrial-organizations/)
+
+---
+
+background-image: url(2.png)
+background-size: cover
+
+---
+
+class:inverse
+background-image: url(3.png)
+background-size: contain
